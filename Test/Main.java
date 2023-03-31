@@ -21,13 +21,13 @@ public abstract class Main {
             }
             else {operation_type += c; flag++;}
             if (flag > 1){
-                return "В выражении не может быть больше одного знака операции. Введите корректные данные";
+                throw new RuntimeException("В выражении не может быть больше одного знака операции. Введите корректные данные");
             }   
         }
         
         // Проверяем полученные значения на валидность: наличие пары чисел и одного знака операции
         if (flag == 0 || second_value == ""){
-            return "Вы ввели некорректные данные.";
+            throw new RuntimeException("Строка не является математической операцией."); 
         }
 
         MyNumber first = new MyNumber(first_value);
