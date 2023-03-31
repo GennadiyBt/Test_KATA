@@ -1,11 +1,11 @@
 package Test;
 
 class MyNumber {
-    String num_wiev;
-    int value;
-    boolean type;
-    String [] arabian = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
-    String [] roman = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
+    private String num_wiev;
+    private int value;
+    private boolean type;
+    private String [] arabian = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+    private String [] roman = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
     public MyNumber(String num){
         this.num_wiev = num;
         for (int i = 0; i < 10; i++) {
